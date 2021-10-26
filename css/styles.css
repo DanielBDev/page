@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+
+/* ------------------------- */
+/* General Styles */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/* ---------------------------- */
+/* FullPage Class */
+/* ---------------------------- */
+#fp-nav ul li a span {
+    background: orange;
+}
+
+/* ---------------------------- */
+/* NavMenu */
+/* ---------------------------- */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: orange;
+}
+
+/* ---------------------------- */
+/* Header */
+/* ---------------------------- */
+
+.header {
+    background-image: url('/assets/image/binary.jpg');
+    background-position: center;
+    background-size: cover;
+    /* filter: blur(1px); */
+}
+
+.header .container-title {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .title {
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+}
+
+.header .text {
+    font-size: 50px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: #fff;
+}
+
+.header .text .automatic-text {
+    font-weight: bold;
+    color: orange;
+    font-style: normal;
+}
+
+.header .container-icon {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: up-down 1s ease infinite;
+}
+
+/* ---------------------------- */
+/* Animation Icon Arrow */
+/* ---------------------------- */
+@keyframes up-down {
+    0% {transform: translateY(20px);}
+    25% {transform: translateY(0px);}
+    100% {transform: translateY(20px);}
+}
+
+/* ---------------------------- */
+/* About */
+/* ---------------------------- */
+
+.about {
+    background-image: url('/assets/image/about.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about .container-icon {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: up-down 1s ease infinite;
+}
+
+.about .text-p {
+    opacity: 0;
+    transition: .3s ease all;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.about .text-animated {
+    opacity: 0;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    top: 100px;
+}
+
+.container-fluid {
+    width: 1300px;
+}
+
+/* ---------------------------- */
+/* Skills */
+/* ---------------------------- */
+
+.skills {
+    background-image: url('/assets/image/dark.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.skills .container-icon {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: up-down 1s ease infinite;
+}
+
+.containerr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills .text-s {
+    opacity: 0;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    top: 100px;
+    color: #e9ebec;
+}
+
+.skills .hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.skills .hover img {
+    width: 200px;
+    height: 200px;
+    transition: all 300ms;
+}
+
+.skills .hover:hover img {
+    transform: scale(1.6) rotate(10deg);
+}
+
+.skills .hover h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: whitesmoke;
+    z-index: 2;
+    transition: all 800ms;
+    border: 40px solid rgba(0, 0, 0, 0.1);
+    /* background: black; */
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hover:hover {
+    box-shadow: 0px 0px 30px -5px black;
+}
+
+.hover:hover h5 {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hover:before,
+.hover:after {
+    content: '';
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.6;
+    transition: all 600ms;
+    border: 4px solid white;
+    z-index: 1;
+}
+
+.hover:before {
+    transform: rotate(45deg) translateY(-220px) translateX(-50px);
+}
+
+.hover:after {
+    transform: rotate(45deg) translateY(290px) translateX(-20px);
+}
+
+.hover:hover:before {
+    transform: rotate(45deg) translateY(-125px) translateX(-50px);
+}
+
+.hover:hover:after {
+    transform: rotate(45deg) translateY(185px) translateX(-20px);
+}
+
+/* ---------------------------- */
+/* Proyects */
+/* ---------------------------- */
+
+.proyects {
+    background-image: url('/assets/image/dark.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.proyects .container-icon {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: up-down 1s ease infinite;
+}
+
+.proyects .text-py {
+    opacity: 0;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    top: 100px;
+    color: #e9ebec;
+}
+
+.proyects .text-h4 {
+    opacity: 0;
+    transition: .3s ease all;
+    font-size: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+/* ---------------------------- */
+/* Contact */
+/* ---------------------------- */
+
+.contact {
+    background-image: url('/assets/image/curiosity.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact .text-h {
+    opacity: 0;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    top: 100px;
+    color: #e9ebec;
+}
+
+.contact .p-contact {
+    display: left;
+    justify-content: center;
+    font-size: 30px;
+    color: #e9ebec;
+}
+
+.contact .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.contact .social-media a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    color: #30313A;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .github i {
+    color: #30313A;
+}
+
+.contact .linkedin i {
+    color: #0A66C2;
+}
+
+/* @media screen and (max-width: 768px){
+    .menu li a,
+    .menu li.active a {
+        font-size: 18px;
+    }
+
+    .text-animated {
+        font-size: 20px;
+    }
+    .text-p{
+        font-size: 10px;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
+
+
+    .footer .social-media {
+        font-size: 30px;
+    }
+
+    .footer .social-media a {
+        width: 70px;
+        height: 70px;
+    }
+} */
+
+@media screen and (max-width: 770px){
+    .menu li a,
+    .menu li.active a {
+        font-size: 30px;
+    }
+
+    .containerr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .container-fluid {
+        width: 600px;
+    }
+
+    .about .text-animated{
+        font-size: 40px;
+        top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about .text-p{
+        font-size: 25px;
+    }
+
+    .skills .text-s {
+        font-size: 40px;
+        top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .skills .hover {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .skills .hover img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills .hover h5 {
+        font-size: 20px;
+    }
+
+    /* .hover:hover:after {
+        transform: rotate(45deg) translateY(185px) translateX(-50px);
+    } */
+
+    .contact .text-h {
+        font-size: 40px;
+        /* top: 10px; */
+        margin-bottom: 10px;
+    }
+
+    .contact .p-contact {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .contact .social-media {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .menu li a,
+    .menu li.active a {
+        font-size: 10px;
+    }
+
+    .containerr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .container-fluid {
+        width: 330px;
+    }
+
+    .about .text-animated{
+        font-size: 20px;
+        top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about .text-p{
+        font-size: 15px;
+    }
+
+    .skills .text-s {
+        font-size: 20px;
+        top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .skills .hover {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .skills .hover img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills .hover h5 {
+        font-size: 10px;
+    }
+
+    .hover:hover:after {
+        transform: rotate(45deg) translateY(185px) translateX(-50px);
+    }
+
+    .contact .text-h {
+        font-size: 20px;
+        /* top: 10px; */
+        margin-bottom: 10px;
+    }
+
+    .contact .p-contact {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
