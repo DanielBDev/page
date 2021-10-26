@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .header {
-    background-image: url('/assets/image/binary.jpg');
+    background-image: url('/img/binary.jpg');
     background-position: center;
     background-size: cover;
     /* filter: blur(1px); */
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .about {
-    background-image: url('/assets/image/about.jpg');
+    background-image: url('/img/about.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .skills {
-    background-image: url('/assets/image/dark.jpg');
+    background-image: url('/img/dark.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .proyects {
-    background-image: url('/assets/image/dark.jpg');
+    background-image: url('/img/dark.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -351,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .contact {
-    background-image: url('/assets/image/curiosity.jpg');
+    background-image: url('/img/curiosity.jpg');
     background-position: center;
     background-size: cover;
 }
