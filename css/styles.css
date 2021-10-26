@@ -88,10 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .header {
-    background-image: url('/img/binary.jpg');
+    background-image: url('../img/binary.jpg');
     background-position: center;
     background-size: cover;
-    /* filter: blur(1px); */
 }
 
 .header .container-title {
@@ -142,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .about {
-    background-image: url('/img/about.jpg');
+    background-image: url('../img/about.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -190,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .skills {
-    background-image: url('/img/dark.jpg');
+    background-image: url('../img/dark.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -257,7 +256,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     transition: all 800ms;
     border: 40px solid rgba(0, 0, 0, 0.1);
-    /* background: black; */
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -305,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .proyects {
-    background-image: url('/img/dark.jpg');
+    background-image: url('../img/dark.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -351,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------- */
 
 .contact {
-    background-image: url('/img/curiosity.jpg');
+    background-image: url('../img/curiosity.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -405,34 +403,6 @@ h1, h2, h3, h4, h5, h6 {
 .contact .linkedin i {
     color: #0A66C2;
 }
-
-/* @media screen and (max-width: 768px){
-    .menu li a,
-    .menu li.active a {
-        font-size: 18px;
-    }
-
-    .text-animated {
-        font-size: 20px;
-    }
-    .text-p{
-        font-size: 10px;
-    }
-
-    .footer h2 {
-        font-size: 20px;
-    }
-
-
-    .footer .social-media {
-        font-size: 30px;
-    }
-
-    .footer .social-media a {
-        width: 70px;
-        height: 70px;
-    }
-} */
 
 @media screen and (max-width: 770px){
     .menu li a,
